@@ -1,0 +1,16 @@
+{
+    "name": "jethrowang/ad-task-3",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Jethrowang\\AdTask3\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "JethroWang24",
+            "email": "202311220@fit.edu.ph"
+        }
+    ],
+    "require": {}
+}

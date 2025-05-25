@@ -1,0 +1,202 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: black;
+}
+header, footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #537D5D;
+    color: white;
+    padding: 15px 40px;
+}
+
+/* Logo section */
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Nav section */
+header nav {
+    display: flex;
+    gap: 20px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 30px;
+    max-width: 1500px;
+    flex-wrap: wrap;
+    margin: 90px auto 90px auto;
+}
+.container-1, .container-2 {
+    flex: 1 1 350px;
+    padding: 50px;
+    box-sizing: border-box;
+    min-width: 300px;
+}
+
+.container-1 {
+    background-color: #73946B;
+    color: white;
+    margin-right: 60px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 1500px;
+    height: 500px;
+}
+
+.container-2 {
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 900px;
+    height: 500px;
+}
+
+@media (max-width: 1200px) {
+    .main-container {
+        gap: 20px;
+        padding: 20px;
+    }
+    .container-1, .container-2 {
+        padding: 30px;
+        height: 400px;
+    }
+}
+
+@media (max-width: 900px) {
+    .main-container {
+        flex-direction: column;
+        gap: 30px;
+        padding: 15px;
+    }
+    .container-1, .container-2 {
+        margin-right: 0;
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .main-container {
+        padding: 5px;
+        gap: 10px;
+    }
+    .container-1, .container-2 {
+        padding: 10px;
+        border-radius: 5px;
+    }
+}
+
+.right-content h2 {
+    color: #537D5D;
+    line-height: 1.4;
+    margin-bottom: 18px;
+}
+
+.right-content{
+    line-height: 2.4;
+    margin-bottom: 18px;
+}
+
+.next-button {
+    margin-top: 20px;
+}
+
+.next-button a {
+    padding: 10px 20px;
+    background-color: #537D5D;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+
+
+
+/* Main content wrapper */
+.main-content {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Meal Table Container */
+.meal-table-container {
+    overflow-x: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Table */
+.meal-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.meal-table th,
+.meal-table td {
+    border: 1px solid #ddd;
+    padding: 15px;
+    vertical-align: top;
+    text-align: center;
+}
+
+/* Table Headers */
+.meal-table thead th {
+    background-color: #739446;
+    color: white;
+    font-size: 18px;
+}
+
+/* Meal Card */
+.meal-card {
+    background-color: #f9f9f9;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.meal-card strong {
+    font-size: 16px;
+    color: #333;
+}
+
+.meal-card br {
+    line-height: 2;
+}
