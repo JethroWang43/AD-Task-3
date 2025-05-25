@@ -61,34 +61,39 @@
 <!-- TODO: To be changed -->
 <!-- The following are just sample -->
 
-Description of the project in details.
+This meal planning website blends PHP, HTML, and CSS to offer users a practical and engaging way to organize their daily meals. Each day, the site displays a fresh combination of breakfast, lunch, and dinner options, randomly chosen from a set list using PHP’s rand() function. It also calculates the total nutritional content like calories and protein by adding up the values from each meal. To make things more interactive, the site features a real-time clock and a countdown timer that tracks how long until the next meal, all handled through PHP’s date and time tools such as DateTime and diff(). Motivational text is included as well, with the paragraph length being counted via strlen(). Everything is styled neatly so users can see their full week’s plan and daily updates at a glance, combining simple backend logic with a smooth and informative frontend experience.
 
 ### Key Components
 
 <!-- TODO: List of Key Components -->
-<!-- The following are just sample -->
+Random Meal Generator
+Uses PHP’s rand() function to randomly assign meals for each day from predefined arrays of options.
 
-- Authentication & Authorization
-- CRUD Operations for Invetory System
+Manual Nutritional Data Assignment
+Nutritional information such as calories and protein is manually set for each meal to maintain consistency across the plan.
+
+Dynamic Time and Date Display
+Utilizes PHP’s built-in DateTime, strtotime(), and date_diff() functions to show the current time, refresh status, and countdown to the next meal.
+
+Motivational Quote and Text Metrics
+Displays a motivational message with character count calculated using strlen() and other string manipulation functions.
+
+Structured Weekly Meal Plan Layout
+Presents a 7-day meal schedule using styled HTML tables and CSS grid layouts for clear visual organization.
+
+Component-Based PHP Architecture
+Incorporates reusable PHP handler components (e.g., clock, quote section, meal cards) for better modularity and maintainability.
+
+Date Manipulation and Formatting
+Applies various PHP date functions to manage and display meal timing accurately and intuitively.
 
 ### Technology
 
 <!-- TODO: List of Technology Used -->
 #### Language
-![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white)
 ![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
-
-#### Framework/Library
-![CodeIgniter](https://img.shields.io/badge/CodeIgniter-EF4223?style=for-the-badge&logo=codeigniter&logoColor=white)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
-![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)
-
-#### Databases
-![MySQL](https://img.shields.io/badge/MySQL-00758F?style=for-the-badge&logo=mysql&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white)
 
 #### Deployment
 ![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
